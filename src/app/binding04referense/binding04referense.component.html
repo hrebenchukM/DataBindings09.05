@@ -1,0 +1,19 @@
+<h2>Referense / Доступ к элементам в шаблоне</h2>
+<button (click)="show(1,2,3)">Sum</button> <br />
+Result = {{result}}
+
+<!--
+    Template Reference Variable - ссылка на DOM элемент или директиву в шаблоне.
+    К переменной можно обратиться в любой части шаблона, в котором она объявлена.
+
+    Есть два способа объявления переменной:
+    префикс #, например #varname
+    префикс ref-, например, ref-varname
+-->
+<input #phone/>
+
+<!-- lots of other elements -->
+
+<!-- phone refers to the input element; pass its `value` to an event handler -->
+<button type="button" (click)="Print(phone.value)">Call</button>
+<p>{{number}}</p>

@@ -1,0 +1,9 @@
+<!-- Biding -->
+<div [style.background-color]="'green'" class="block">
+    Блок
+</div>
+<hr>
+<button (click)="toggle = !toggle">Поменять цвет</button>
+<div [style.background-color]="toggle ? 'gold' : 'skyblue'" class="block">
+    Блок
+</div>
