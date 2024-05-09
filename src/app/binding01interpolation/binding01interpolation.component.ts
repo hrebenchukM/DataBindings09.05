@@ -75,7 +75,8 @@ export class Binding01InterpolationComponent implements OnInit {
     this.Arr.push(new Product);
     this.Arr[6].Name="Computer Parts";    
     this.Arr[6].img="../../assets/kompyuternye-komplektuyushchie.png";
-    
+    this.Arr[6].text="";
+
     this.Arr.push(new Product);
     this.Arr[7].Name="Networking Equipment";    
     this.Arr[7].img="../../assets/setevoe-oborudovanie.png";
