@@ -14,11 +14,12 @@ export class Binding06AttributeComponent implements OnInit {
     textInfomation = 'some info text'
 
     fillColor:string="black";
+    
     SetColor(col:any){
    this.fillColor=col;
     }
     valueR: number = 40;
-    colorR:string = 'black';
+    colorR:string = 'red';
     
 
     increase() {
