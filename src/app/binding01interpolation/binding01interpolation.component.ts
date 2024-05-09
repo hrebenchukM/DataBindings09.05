@@ -102,8 +102,8 @@ export class Binding01InterpolationComponent implements OnInit {
     this.Arr[11].img="../../assets/ofisnaya-tekhnika.png";
     this.Arr[11].text="";
     
-   
-    
+//////////////////////////////////////HW////////////////////////////////////
+
   }
 
   // returnStringMethod(){
