@@ -9,11 +9,13 @@ import { Binding05KeyboardsComponent } from './binding05keyboards/binding05keybo
 import { Binding06AttributeComponent } from './binding06attribute/binding06attribute.component';
 import { Binding07ClassComponent } from './binding07class/binding07class.component';
 import { Binding08StyleComponent } from './binding08style/binding08style.component';
+import { ResumeComponent } from './resume/resume.component';
+
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet,  Binding01InterpolationComponent, Binding02PropertyComponent,Binding03EventsComponent,Binding04ReferenseComponent,Binding05KeyboardsComponent,
-    Binding06AttributeComponent,Binding07ClassComponent,Binding08StyleComponent ],
+    Binding06AttributeComponent,Binding07ClassComponent,Binding08StyleComponent,ResumeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
