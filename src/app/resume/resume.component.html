@@ -1,1 +1,79 @@
-<p>resume works!</p>
+
+<h1>Resume</h1>
+
+
+<div>
+    <img src="../../assets/Фото.jpg" alt="Моя фотография" width="100px">
+</div>
+
+<div>
+    <h3>Personal information</h3>
+    <ul>
+      <li>Name: {{ ArrP[0].Name}}</li>
+      <li>Surname: {{ ArrP[0].Surname }}</li>
+      <li>Date of birth: {{ ArrP[0].DateOfBirth }}</li>
+      <li>Email: {{ ArrP[0].Email }}</li>
+      <li>Phone: {{ ArrP[0].Phone }}</li>
+      <li>Adress: {{ ArrP[0].Adress }}</li>
+      <li> Marital status: {{ ArrP[0].MaritalStatus }}.</li>
+    </ul>
+  </div>
+
+
+
+  <div>
+    <h3>Education</h3>
+    <ul>
+      <li>School: {{ ArrEd[0].School }}</li>
+      <li>University: {{ ArrEd[0].University }}</li>
+    </ul>
+  </div>
+
+
+
+  <div>
+    <h3>Skills,certificates</h3>
+    <ul>
+        <li>Skills: {{ArrSc[0].Skills[0]}}, Position: {{ArrSc[0].Position[0]}}</li>
+        <li>Skills: {{ArrSc[0].Skills[1]}}, Position: {{ArrSc[0].Position[1]}}</li>
+        <li>Skills: {{ArrSc[0].Skills[2]}}, Position: {{ArrSc[0].Position[2]}}</li>
+        <br>
+        <li>Certificates: {{ArrSc[0].Certificates[0]}}</li>
+    </ul>
+  </div>
+  
+
+  <div>
+    <h3>Languages</h3>
+    <ul>
+      <li>Language:{{ArrLg[0].Language[0]}},Level: {{ArrLg[0].Level[0]}}</li>
+      <li>Language:{{ArrLg[0].Language[1]}},Level: {{ArrLg[0].Level[1]}}</li>
+      <li>Language:{{ArrLg[0].Language[2]}},Level: {{ArrLg[0].Level[2]}}</li>
+      <li>Language:{{ArrLg[0].Language[3]}},Level: {{ArrLg[0].Level[3]}}</li>
+
+
+      
+    </ul>
+  </div>
+   
+
+
+<div>
+  <h3>Experience</h3>
+  <ul>
+    <li>{{ ArrEx[0].Position}} в {{ ArrEx[0].Company}} ({{ArrEx[0].Duration }})</li>
+  </ul>
+</div>
+
+
+
+
+<div>
+  <h3>Links to resources</h3>
+  <ul>
+    <li><a href="{{ ArrLk[0].GitHub }}">GitHub</a></li>
+    <li><a href="{{ ArrLk[0].LinkedIn }}">LinkedIn</a></li>
+    <li><a href="{{ ArrLk[0].Twitter }}">Twitter</a></li>
+    <li><a href="{{ ArrLk[0].Certificates }}">Certificates</a></li>
+  </ul>
+</div>
